@@ -1,0 +1,35 @@
+/* ============================================================
+   illustrations.css — a saját vonalrajz-lapok színezése
+   Forrás: tools/illustrations.mjs → scripts/illustrations.js
+   Tokenek (a befoglaló elemen felülírhatók):
+     --il-ink    rajz és szerkesztővonal
+     --il-accent kiemelés (a kezelt terület)
+     --il-paper  takaró kitöltés (a lap alapszíne)
+   ============================================================ */
+.il {
+  --il-ink: var(--color-ink, #1C1917);
+  --il-accent: var(--color-brand, #0F766E);
+  --il-paper: #F5F2EC;
+  overflow: visible;
+}
+.il path, .il circle, .il ellipse, .il rect { stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+.il-c  { fill: none; stroke: var(--il-ink); stroke-width: .8; opacity: .3; }
+.il-f  { fill: none; stroke: var(--il-ink); stroke-width: 1.4; }
+.il-fp { fill: var(--il-paper); stroke: var(--il-ink); stroke-width: 1.4; }
+/* kontúros végtag: a vastagság a markupban van, ezért itt nincs non-scaling */
+.il .il-lo, .il .il-li { vector-effect: none; fill: none; }
+.il-lo { stroke: var(--il-ink); }
+.il-li { stroke: var(--il-paper); }
+.il-a  { fill: none; stroke: var(--il-accent); stroke-width: 1.4; }
+.il-aw { stroke-width: 3; }
+.il-af { fill: var(--il-accent); stroke: none; }
+.il-afill { fill: var(--il-accent); stroke: none; opacity: .16; }
+.il-tape { fill: color-mix(in srgb, var(--il-accent) 18%, transparent); stroke: var(--il-accent); stroke-width: 1.4; }
+.il .il-band { vector-effect: none; fill: none; stroke: var(--il-accent); stroke-width: 13; opacity: .26; }
+.il-bandl { fill: none; stroke: var(--il-accent); stroke-width: 1.1; }
+.il-t {
+  font-family: var(--font-sans, system-ui, sans-serif);
+  font-size: 10px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
+  fill: var(--il-ink); opacity: .55;
+}
+.il-ta { fill: var(--il-accent); opacity: 1; }

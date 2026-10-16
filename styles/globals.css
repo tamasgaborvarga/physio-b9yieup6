@@ -1,0 +1,193 @@
+/* ============================================================
+   globals.css — Design tokens & base layer
+   Centralizált design rendszer, mely a Tailwind config-ot
+   kiegészíti CSS változókkal a futásidős testreszabhatóság
+   érdekében (pl. téma, animáció kapcsolók, sűrűség).
+   ============================================================ */
+
+:root {
+  /* Brand palette — a teal mellé meleg irányba húzott soft felületek */
+  --color-brand:        #0F766E;
+  --color-brand-dark:   #0B5A53;
+  --color-brand-light:  #D4EDE4;
+  --color-brand-soft:   #EDF5F0;
+
+  /* Neutrals — meleg, csontszínű skála (klinika-spa, nem steril fehér) */
+  --color-bg:           #FBFAF8;
+  --color-bg-tint:      #F5F2EC;   /* váltakozó szekció-háttér */
+  --color-ink:          #1C1917;
+  --color-muted:        #57534E;   /* AA a tint felületen is (6.4:1) */
+  --color-line:         #E7E2D9;
+  --color-line-soft:    #F0ECE4;
+
+  /* Surfaces */
+  --surface-glass:      rgba(251, 250, 248, 0.72);
+  --surface-glass-dark: rgba(251, 250, 248, 0.55);
+  --surface-card:       rgba(255, 255, 255, 0.8);
+
+  /* Typography — karakteres display groteszk (Bricolage) + semleges body
+     groteszk (Plus Jakarta Sans). A Bricolage nagyobb x-magasságú, mint a
+     korábbi serif, ezért a display-skála kisebb, a tracking záróbb (-0.03em). */
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Bricolage Grotesque', 'Plus Jakarta Sans', system-ui, sans-serif;
+  --tracking-display: -0.03em;
+  --tracking-tight:   -0.02em;
+  --leading-display:  1.04;
+  --leading-body:     1.7;
+
+  /* Radius */
+  --radius-sm:  10px;
+  --radius-md:  16px;
+  --radius-lg:  24px;
+  --radius-xl:  32px;
+  --radius-2xl: 40px;
+
+  /* Motion — organikus, folyékony expo-out: gyors indulás, hosszú kifutás */
+  --ease-out:   cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast:   200ms;
+  --dur-base:   500ms;
+  --dur-slow:   700ms;
+
+  /* Layout */
+  --content-max:    80rem;     /* 1280px */
+  --content-pad-x:  1.5rem;
+  --section-py-d:   8rem;      /* desktop py-32 */
+  --section-py-m:   5rem;      /* mobile py-20 */
+
+  /* Spacing scale — 4/8 px rács, tokenizált.
+     Minden custom spacing innen merítsen, ne adhoc rem értékből. */
+  --space-1:  0.25rem;  /*  4 */
+  --space-2:  0.5rem;   /*  8 */
+  --space-3:  0.75rem;  /* 12 */
+  --space-4:  1rem;     /* 16 */
+  --space-5:  1.25rem;  /* 20 */
+  --space-6:  1.5rem;   /* 24 */
+  --space-8:  2rem;     /* 32 */
+  --space-10: 2.5rem;   /* 40 */
+  --space-12: 3rem;     /* 48 */
+  --space-16: 4rem;     /* 64 */
+  --space-20: 5rem;     /* 80 */
+  --space-24: 6rem;     /* 96 */
+
+  /* Tipográfiai sortörés-szélesség */
+  --measure-narrow: 55ch;
+  --measure-comfy:  70ch;
+  --measure-wide:   78ch;
+
+  /* Min interactive target (Apple HIG / WCAG) */
+  --tap-min: 44px;
+
+  /* Shadows — meleg (stone) alapú árnyékhő, nem kékes-szürke */
+  --shadow-soft:  0 1px 2px rgba(28,25,23,0.04), 0 12px 32px -8px rgba(28,25,23,0.06);
+  --shadow-lift:  0 16px 48px -16px rgba(15,118,110,0.22), 0 2px 8px rgba(28,25,23,0.05);
+  --shadow-glass: 0 24px 64px -24px rgba(28,25,23,0.16), inset 0 1px 0 rgba(255,255,255,0.7);
+  /* „Belső ragyogás" — kártyák felső élén finom fény, ornamens helyett textúra */
+  --shadow-inset-glow: inset 0 1px 0 rgba(255,255,255,0.85), inset 0 0 0 1px rgba(255,255,255,0.35);
+}
+
+/* ----------- Reset & base ----------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px; /* fixed nav offset */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  /* Mobil overflow biztonsági háló — nincs vízszintes csúszás */
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background: var(--color-bg);
+  line-height: var(--leading-body);
+  /* Min body font 16px — soha ne csökkenhessen viewport alapján */
+  font-size: 16px;
+  /* Variable font optikai tengely: nagy méret más rajzú, mint a kicsi */
+  font-optical-sizing: auto;
+  /* Háló a véletlen full-width gyermek-elemek ellen */
+  overflow-x: hidden;
+  width: 100%;
+}
+
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* Hide unloaded components to prevent layout flash */
+[data-component]:empty {
+  min-height: 0;
+}
+
+/* Skip link (accessibility) */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  z-index: 100;
+  background: var(--color-brand);
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+  font-weight: 500;
+  transition: top var(--dur-base) var(--ease-out);
+}
+.skip-link:focus {
+  top: 1rem;
+  outline: 2px solid var(--color-brand-light);
+  outline-offset: 2px;
+}
+
+/* Focus ring system */
+:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Branded szövegkijelölés — a böngésző kék helyett a márka halk teal-je */
+::selection {
+  background: var(--color-brand-light);
+  color: var(--color-brand-dark);
+}
+
+/* Papír-szemcse: alig érzékelhető anyag-textúra a csont-alapon (klinika-spa
+   tapintás, nem képernyő-lapos). Topmost, pointer-events nélkül, multiply-jal
+   csak a mélyedésekbe ül — mint merített papír vagy sima vakolat. */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  opacity: 0.04;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

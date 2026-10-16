@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <!--
+    Brand-ed Open Graph cover (1200×630).
+    TODO production: konvertáljátok PNG-re és töltsétek fel
+    `assets/images/og-cover.png` néven (a meta-k erre mutatnak).
+  -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"  stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F0FDFA"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"  stop-color="#0F766E"/>
+      <stop offset="100%" stop-color="#14B8A6"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.85" cy="0.15" r="0.6">
+      <stop offset="0%"  stop-color="#CCFBF1" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#CCFBF1" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <!-- Faint top-left arc -->
+  <circle cx="-120" cy="780" r="500" fill="#0F766E" opacity="0.06"/>
+
+  <!-- Eyebrow chip -->
+  <g transform="translate(96 110)">
+    <rect width="370" height="44" rx="22" fill="#F0FDFA"/>
+    <circle cx="22" cy="22" r="5" fill="#0F766E"/>
+    <text x="42" y="28" font-family="Inter, system-ui, sans-serif"
+          font-size="16" font-weight="500" fill="#0B5A53"
+          letter-spacing="0.4">
+      Tiszafüred · Bertalan-Varga Réka
+    </text>
+  </g>
+
+  <!-- Title -->
+  <g transform="translate(96 200)">
+    <text font-family="Inter, system-ui, sans-serif" font-weight="700"
+          font-size="92" fill="#111827" letter-spacing="-3">
+      <tspan x="0" y="0">Physio</tspan>
+      <tspan fill="url(#brand)"> &amp; More</tspan>
+    </text>
+    <text y="116" font-family="Inter, system-ui, sans-serif"
+          font-size="36" font-weight="500" fill="#374151" letter-spacing="-0.5">
+      Gyógytorna rendelő · Mozgásszervi prevenció és rehabilitáció
+    </text>
+  </g>
+
+  <!-- Bottom row: services -->
+  <g transform="translate(96 470)" font-family="Inter, system-ui, sans-serif"
+     font-size="20" font-weight="500" fill="#0B5A53">
+    <g>
+      <rect width="280" height="48" rx="24" fill="#FFFFFF" stroke="#CCFBF1"/>
+      <text x="22" y="30">Egyéni mozgásterápia</text>
+    </g>
+    <g transform="translate(298 0)">
+      <rect width="240" height="48" rx="24" fill="#FFFFFF" stroke="#CCFBF1"/>
+      <text x="22" y="30">Triplex gerincterápia</text>
+    </g>
+    <g transform="translate(556 0)">
+      <rect width="170" height="48" rx="24" fill="#FFFFFF" stroke="#CCFBF1"/>
+      <text x="22" y="30">Safe laser</text>
+    </g>
+    <g transform="translate(744 0)">
+      <rect width="180" height="48" rx="24" fill="#FFFFFF" stroke="#CCFBF1"/>
+      <text x="22" y="30">Kinesio tape</text>
+    </g>
+  </g>
+
+  <!-- Footer URL -->
+  <text x="96" y="585" font-family="Inter, system-ui, sans-serif"
+        font-size="20" font-weight="500" fill="#6B7280">
+    physioandmore.hu
+  </text>
+</svg>

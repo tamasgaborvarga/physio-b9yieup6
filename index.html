@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0F766E" />
+  <!-- JS-jelző: a reveal-animációk csak .js alatt rejtik a tartalmat,
+       így JS nélkül is látható marad az oldal (no-JS fallback). -->
+  <script>document.documentElement.classList.add('js');</script>
+
+  <title>Physio &amp; More — Gyógytorna rendelő · Bertalan-Varga Réka</title>
+  <meta name="description" content="Tudatos, fájdalommentes mozgás: egyéni mozgásterápia, Triplex gerincterápia, Safe laser és Kinesio tape Bertalan-Varga Réka rendelőjében, Tiszafüreden." />
+  <meta name="author" content="Bertalan-Varga Réka — Physio & More" />
+  <meta name="keywords" content="gyógytorna, mozgásterápia, Triplex, Safe laser, Kinesio tape, rehabilitáció, Tiszafüred, Bertalan-Varga Réka" />
+  <meta name="robots" content="noindex, nofollow" />
+
+  <!-- TODO: éles deploykor cseréljétek a valódi domainre -->
+  <link rel="canonical" href="https://tamasgaborvarga.github.io/physio-b9yieup6/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="hu_HU" />
+  <meta property="og:site_name" content="Physio & More" />
+  <meta property="og:url" content="https://tamasgaborvarga.github.io/physio-b9yieup6/" />
+  <meta property="og:title" content="Physio & More — Tudatos mozgás. Hosszú távon és fájdalommentesen." />
+  <meta property="og:description" content="Egyéni mozgásterápia, Triplex gerincterápia, Safe laser, Kinesio tape — Bertalan-Varga Réka rendelőjében, Tiszafüreden." />
+  <meta property="og:image" content="https://tamasgaborvarga.github.io/physio-b9yieup6/assets/images/og-cover.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Physio & More — Gyógytorna rendelő, Bertalan-Varga Réka" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Physio & More — Tudatos mozgás. Hosszú távon és fájdalommentesen." />
+  <meta name="twitter:description" content="Egyéni mozgásterápia, Triplex gerincterápia, Safe laser, Kinesio tape — Tiszafüreden." />
+  <meta name="twitter:image" content="https://tamasgaborvarga.github.io/physio-b9yieup6/assets/images/og-cover.png" />
+
+  <!-- Favicons / PWA -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
+
+  <!-- Schema.org structured data — Google Local SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "@id": "https://tamasgaborvarga.github.io/physio-b9yieup6/#business",
+    "name": "Physio & More",
+    "alternateName": "Bertalan-Varga Réka — Gyógytorna rendelő",
+    "description": "Mozgásszervi panaszok prevenciója és rehabilitációja. Egyéni mozgásterápia, Triplex gerincterápia, Safe laser, Kinesio tape — Tiszafüred.",
+    "url": "https://tamasgaborvarga.github.io/physio-b9yieup6/",
+    "image": "https://tamasgaborvarga.github.io/physio-b9yieup6/assets/images/og-cover.png",
+    "telephone": "+36306433449",
+    "email": "vreka93@gmail.com",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Fő út 28.",
+      "addressLocality": "Tiszafüred",
+      "postalCode": "5350",
+      "addressRegion": "Jász-Nagykun-Szolnok",
+      "addressCountry": "HU"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 47.6203,
+      "longitude": 20.7616
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"],
+        "opens": "10:00",
+        "closes": "18:00"
+      }
+    ],
+    "founder": {
+      "@type": "Person",
+      "name": "Bertalan-Varga Réka",
+      "jobTitle": "Gyógytornász",
+      "worksFor": { "@id": "https://tamasgaborvarga.github.io/physio-b9yieup6/#business" }
+    },
+    "medicalSpecialty": ["Physiotherapy","SportsMedicine","Rehabilitation"],
+    "availableService": [
+      { "@type": "MedicalTherapy", "name": "Egyéni mozgásterápia" },
+      { "@type": "MedicalTherapy", "name": "Triplex gerincterápia" },
+      { "@type": "MedicalTherapy", "name": "Triplex tréning" },
+      { "@type": "MedicalTherapy", "name": "Sérülések utáni rehabilitáció" },
+      { "@type": "MedicalTherapy", "name": "Szülés utáni regeneráló tréning" },
+      { "@type": "MedicalTherapy", "name": "Safe laser" },
+      { "@type": "MedicalTherapy", "name": "Kinesio tape" },
+      { "@type": "MedicalTherapy", "name": "Porckorongsérv komplex rehabilitációja" },
+      { "@type": "MedicalTherapy", "name": "Vagus terápia" },
+      { "@type": "MedicalTherapy", "name": "Állkapocs ízületi kezelés" },
+      { "@type": "MedicalTherapy", "name": "Köpölyterápia" },
+      { "@type": "MedicalTherapy", "name": "Funkcionális flossing" }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/vargarekagyogytornasz"
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Karakteres modern páros: Bricolage Grotesque (display groteszk) + Plus Jakarta Sans (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              DEFAULT: '#0F766E',
+              dark: '#0B5A53',
+              light: '#D4EDE4',
+              soft: '#EDF5F0',
+              ink: '#1C1917',
+              muted: '#57534E',
+              line: '#E7E2D9'
+            },
+            bone: '#FBFAF8',
+            cream: '#F5F2EC'
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'system-ui', '-apple-system', 'Segoe UI', 'sans-serif'],
+            display: ['Bricolage Grotesque', 'Plus Jakarta Sans', 'system-ui', 'sans-serif']
+          },
+          letterSpacing: { tightest: '-0.03em' },
+          boxShadow: {
+            soft: '0 1px 2px rgba(28,25,23,0.04), 0 12px 32px -8px rgba(28,25,23,0.06)',
+            lift: '0 16px 48px -16px rgba(15,118,110,0.22), 0 2px 8px rgba(28,25,23,0.05)',
+            glass: '0 24px 64px -24px rgba(28,25,23,0.16), inset 0 1px 0 rgba(255,255,255,0.7)'
+          },
+          borderRadius: { '4xl': '2rem', '5xl': '2.5rem' },
+          maxWidth: { '7xl': '80rem', 'prose-lg': '64ch' }
+        }
+      }
+    }
+  </script>
+
+  <!-- Project styles -->
+  <link rel="stylesheet" href="styles/globals.css" />
+  <link rel="stylesheet" href="styles/components.css" />
+  <link rel="stylesheet" href="styles/animations.css" />
+  <link rel="stylesheet" href="styles/utilities.css" />
+  <link rel="stylesheet" href="styles/illustrations.css" />
+
+  <!-- Lucide icons — self-hosted (pinned v0.469.0), nincs CDN-függőség.
+       Frissítés: cseréljétek az assets/vendor/lucide.min.js fájlt egy
+       újabb verzióra (a brand-ikonokat a lucide már nem tartalmazza,
+       a Facebook „f" ezért inline SVG a markupban). -->
+  <script src="assets/vendor/lucide.min.js" defer></script>
+</head>
+
+<body class="font-sans bg-bone text-brand-ink antialiased selection:bg-brand-light selection:text-brand-dark">
+
+  <!-- Skip link for keyboard users -->
+  <a href="#main" class="skip-link">Ugrás a tartalomra</a>
+
+  <!-- ============================================================
+       Komponensek inline-olva. A /components/*.html fájlok ezek
+       moduláris design source-jai (egy esetleges framework-migrációkor
+       vagy manuális szerkesztéskor a /components/ az olvasható forma).
+       ============================================================ -->
+
+  <!-- ===== NAVBAR ===== -->
+  <header id="navbar-mount" data-component="navbar">
+    <div class="nav-shell">
+      <nav class="nav-bar" aria-label="Főnavigáció">
+        <a href="#hero" class="nav-brand no-tap-highlight" aria-label="Physio & More — főoldal">
+          Physio<span class="text-brand font-bold">&nbsp;&amp;</span>&nbsp;More
+        </a>
+
+        <div class="nav-links">
+          <a class="nav-link" href="#about">Rólam</a>
+          <a class="nav-link" href="#services">Szolgáltatások</a>
+          <a class="nav-link" href="#gallery">Galéria</a>
+          <a class="nav-link" href="#testimonials">Vélemények</a>
+          <a class="nav-link" href="#pricing">Árlista</a>
+          <a class="nav-link" href="#contact">Kapcsolat</a>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <a href="#contact" class="nav-cta hidden lg:inline-flex">
+            Időpontfoglalás
+            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+          </a>
+          <button class="nav-burger" type="button"
+                  aria-label="Menü megnyitása"
+                  aria-controls="mobile-panel"
+                  aria-expanded="false"
+                  data-nav-toggle>
+            <i data-lucide="menu" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <div id="mobile-panel" class="mobile-panel" aria-hidden="true">
+      <a href="#about">Rólam</a>
+      <a href="#services">Szolgáltatások</a>
+      <a href="#gallery">Galéria</a>
+      <a href="#testimonials">Vélemények</a>
+      <a href="#pricing">Árlista</a>
+      <a href="#contact">Kapcsolat</a>
+      <a href="#contact" class="btn btn-brand mt-8 self-start">
+        Időpontfoglalás
+        <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+      </a>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+    <!-- ===== HERO ===== -->
+    <section id="hero" data-component="hero">
+      <div class="hero-cover">
+        <!-- Teljes felületű háttér: a valódi rendelő fotója + fehér scrim -->
+        <picture>
+          <source srcset="assets/images/clinic-main.avif" type="image/avif" />
+          <source srcset="assets/images/clinic-main.webp" type="image/webp" />
+          <img
+            class="hero-photo"
+            src="assets/images/clinic-main.jpg"
+            width="2048" height="1365"
+            alt="A Physio &amp; More rendelő — kezelőasztal, tükör, bordásfal és eszközök"
+            loading="eager"
+            fetchpriority="high"
+            decoding="async" />
+        </picture>
+        <div class="hero-scrim" aria-hidden="true"></div>
+
+        <div class="container-page relative">
+          <div class="hero-center" data-stagger>
+            <h1 class="hero-headline text-balance" data-reveal>
+              Tudatos mozgás.<br />
+              <em class="hero-headline-sub">Hosszú távon és fájdalommentesen.</em>
+            </h1>
+
+            <p class="section-lede text-pretty" data-reveal>
+              Mozgásszervi panaszok prevenciója és rehabilitációja a Physio &amp; More rendelőben — egyéni felmérésen alapuló programmal, Tiszafüreden.
+            </p>
+
+            <div class="flex flex-wrap items-center justify-center gap-3" data-reveal>
+              <a href="#contact" class="btn btn-brand">
+                Időpontfoglalás
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+              <a href="#services" class="btn btn-ghost">Szolgáltatások</a>
+            </div>
+
+            <div class="hero-stats grid grid-cols-3 gap-6 w-full max-w-md pt-6 hairline" data-reveal>
+              <div class="hero-stat"><span class="num">10+</span><span class="lbl">év tapasztalat</span></div>
+              <div class="hero-stat"><span class="num">1:1</span><span class="lbl">személyes figyelem</span></div>
+              <div class="hero-stat"><span class="num">100%</span><span class="lbl">egyéni program</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" data-component="about">
+      <div class="section">
+        <div class="container-page">
+          <div class="about-grid gap-12 lg:gap-16">
+
+            <div class="about-grid-header flex flex-col gap-6" data-stagger>
+              <span class="section-eyebrow eyebrow-dot" data-reveal>Rólam</span>
+              <div data-reveal>
+                <h2 class="section-title text-balance">Bertalan-Varga Réka</h2>
+                <p class="about-role">Gyógytornász · 3D YOGA &amp; TripleX oktató</p>
+              </div>
+            </div>
+
+            <figure class="about-portrait about-grid-photo shadow-soft" data-reveal>
+              <picture>
+                <source srcset="assets/images/portrait.avif" type="image/avif" />
+                <source srcset="assets/images/portrait.webp" type="image/webp" />
+                <img
+                  src="assets/images/portrait.jpg"
+                  alt="Bertalan-Varga Réka, gyógytornász és 3D YOGA oktató portréfotója"
+                  loading="lazy"
+                  decoding="async"
+                  width="762"
+                  height="953"
+                />
+              </picture>
+            </figure>
+
+            <div class="about-grid-body flex flex-col gap-6" data-stagger>
+              <blockquote class="about-quote text-pretty" data-reveal>
+                „Szakmámat hivatásnak tekintem és küldetésemnek érzem, hogy az emberekben tudatosuljon, hogy egészséges életmóddal és testmozgással tudnak a legtöbbet tenni mozgásszerveik egészségéért.
+                A különböző gerincproblémák gyógyítása, sportsérülések és balesetek utáni rehabilitáció mellett munkám fő profilja a mozgásszervi panaszok prevenciója, többek között az általam tartott csoportos 3D YOGA és TripleX Training foglalkozások által.”
+              </blockquote>
+
+              <div class="qual-block" data-reveal>
+                <div class="qual-label">Szakterületek &amp; képesítések</div>
+                <ul class="qual-chips" role="list">
+                  <li class="qual-chip">Gyógytornász diploma</li>
+                  <li class="qual-chip">Triplex gerincterápia</li>
+                  <li class="qual-chip">3D YOGA oktató</li>
+                  <li class="qual-chip">TripleX Training oktató</li>
+                </ul>
+              </div>
+
+              <details class="about-experience" data-reveal>
+                <summary class="about-experience-toggle">
+                  <span>Szakmai tapasztalat és tanulmányok</span>
+                  <i data-lucide="chevron-down" class="w-4 h-4 about-experience-icon" aria-hidden="true"></i>
+                </summary>
+                <div class="about-experience-body">
+                  <div class="about-experience-item">
+                    <div class="about-experience-heading">Kórházi szakmai gyakorlat</div>
+                    <p>B-A-Z Megyei Központi Kórház és Egyetemi Oktatókórház — traumatológiai osztály, SVANTO (stroke, vascularis, neurológiai és toxikológiai osztály), ambuláns ellátás.</p>
+                  </div>
+                  <div class="about-experience-item">
+                    <div class="about-experience-heading">2011–2015 · Debreceni Egyetem</div>
+                    <p>Népegészségügyi Kar — ápolás és betegellátás alapszak, gyógytornász szak.</p>
+                  </div>
+                  <div class="about-experience-item">
+                    <div class="about-experience-heading">Posztgraduális tanfolyamok</div>
+                    <ul class="exp-tag-list" role="list">
+                      <li class="exp-tag">Mulligan manuálterápia I. modul</li>
+                      <li class="exp-tag">Kinesio tape alapképzés</li>
+                      <li class="exp-tag">McKenzie módszer „A” modul</li>
+                      <li class="exp-tag">Funkcionális flossing</li>
+                      <li class="exp-tag">Funkcionális fascia tréning</li>
+                      <li class="exp-tag">SMR, manuális fascia release és trigger pont terápia</li>
+                      <li class="exp-tag">Hegkezelés</li>
+                      <li class="exp-tag">Köpölyterápia a komplex rehabilitációért</li>
+                      <li class="exp-tag">Mummy tummy training</li>
+                      <li class="exp-tag">Vagus terápia</li>
+                      <li class="exp-tag">Állkapocs ízületi terápia</li>
+                    </ul>
+                  </div>
+                </div>
+              </details>
+
+              <div class="flex flex-wrap gap-3 pt-2" data-reveal>
+                <a href="#services" class="btn btn-ghost">
+                  Szolgáltatások
+                  <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section id="services" data-component="services">
+      <div class="section">
+        <div class="container-page">
+          <header class="max-w-2xl mb-12 md:mb-16 flex flex-col gap-5" data-stagger>
+            <span class="section-eyebrow eyebrow-dot" data-reveal>Szolgáltatások</span>
+            <h2 class="section-title text-balance" data-reveal>
+              Tizenkét fókuszált terület.<br />
+              <span class="text-brand">Egy közös elv: pontosság.</span>
+            </h2>
+            <p class="section-lede text-pretty" data-reveal>
+              Felmérés. Terv. Lépésről lépésre haladás. A klasszikus mozgásterápia mellett célzott kezelések — pontosan annyi, amennyi szükséges.
+            </p>
+          </header>
+          <!-- JS-sel ide hidratálódnak a kártyák (main.js). A <noscript>
+               a JS-t nem futtató látogatóknak / robotoknak adja a TELJES
+               statikus listát — a böngésző JS mellett figyelmen kívül hagyja
+               (nincs duplikáció). Új szolgáltatásnál a data/services.json,
+               az inline JSON ÉS ez a noscript-lista is frissítendő. -->
+          <div class="service-grid" data-services-grid></div>
+          <noscript>
+            <div class="service-grid">
+              <article class="service-card is-featured">
+                <span class="service-num" aria-hidden="true">01</span>
+                <div class="service-body">
+                  <h3 class="service-title">Triplex gerincterápia</h3>
+                  <p class="service-desc">Háromdimenziós gerinckezelés a tartás, stabilitás és fájdalommentes mozgástartomány helyreállítására.</p>
+                </div>
+              </article>
+              <article class="service-card">
+                <span class="service-num" aria-hidden="true">02</span>
+                <div class="service-body">
+                  <h3 class="service-title">Egyéni mozgásterápia</h3>
+                  <p class="service-desc">Személyre szabott terápia részletes felmérés alapján — pontos célokkal és mérhető előrehaladással.</p>
+                </div>
+              </article>
+              <article class="service-card">
+                <span class="service-num" aria-hidden="true">03</span>
+                <div class="service-body">
+                  <h3 class="service-title">Triplex tréning</h3>
+                  <p class="service-desc">Funkcionális csoportos foglalkozás, mely a mély izomzat erősítését és tartáskorrekciót célozza.</p>
+                </div>
+              </article>
+              <article class="service-card">
+                <span class="service-num" aria-hidden="true">04</span>
+                <div class="service-body">
+                  <h3 class="service-title">Sérülések utáni rehabilitáció</h3>
+                  <p class="service-desc">Sport- és balesetes sérülések utáni komplex rehabilitációs program — visszatérés a mozgáshoz.</p>
+                </div>
+              </article>
+              <article class="service-card">
+                <span class="service-num" aria-hidden="true">05</span>
+                <div class="service-body">
+                  <h3 class="service-title">Szülés utáni regeneráló tréning</h3>
+                  <p class="service-desc">A medencefenék és a haskorzettek tudatos újraépítése biztonságos, lépcsőzetes terheléssel.</p>
+                </div>
+              </article>
+              <article class="service-card">
+                <span class="service-num" aria-hidden="true">06</span>
+                <div class="service-body">
+                  <h3 class="service-title">Safe laser</h3>
+                  <p class="service-desc">Lágylézeres kezelés gyulladáscsökkentésre, regenerációra és fájdalomcsillapításra.</p>
+                </div>
+              </article>
+              <article class="service-card is-featured">
+                <span class="service-num" aria-hidden="true">07</span>
+                <div class="service-body">
+                  <h3 class="service-title">Porckorongsérv komplex rehabilitációja</h3>
+                  <p class="service-desc">Cél a fájdalom csökkentése, a stabilitás visszaépítése és a kiváltó tényezők korrigálása.</p>
+                </div>
+              </article>
+              <article class="service-card">
+                <span class="service-num" aria-hidden="true">08</span>
+                <div class="service-body">
+                  <h3 class="service-title">Kinesio tape</h3>
+                  <p class="service-desc">Speciális tape-technika az izmok és ízületek támogatására, a természetes mozgás megőrzése mellett.</p>
+                </div>
+              </article>
+              <article class="service-card">
+                <span class="service-num" aria-hidden="true">09</span>
+                <div class="service-body">
+                  <h3 class="service-title">Vagus terápia</h3>
+                  <p class="service-desc">Idegrendszeri egyensúly visszaállítása — stresszcsökkentés és vegetatív regeneráció támogatása.</p>
+                </div>
+              </article>
+              <article class="service-card">
+                <span class="service-num" aria-hidden="true">10</span>
+                <div class="service-body">
+                  <h3 class="service-title">Állkapocs ízületi kezelés</h3>
+                  <p class="service-desc">TMD jellegű panaszok kezelése manuális technikákkal és célzott gyakorlatokkal.</p>
+                </div>
+              </article>
+              <article class="service-card">
+                <span class="service-num" aria-hidden="true">11</span>
+                <div class="service-body">
+                  <h3 class="service-title">Köpölyterápia</h3>
+                  <p class="service-desc">Vákuumos szívóhatás a szöveti keringés serkentésére, izomlazításra és a komplex rehabilitáció kiegészítésére.</p>
+                </div>
+              </article>
+              <article class="service-card">
+                <span class="service-num" aria-hidden="true">12</span>
+                <div class="service-body">
+                  <h3 class="service-title">Funkcionális flossing</h3>
+                  <p class="service-desc">Kompressziós szalagos technika az ízületi mozgástartomány gyors javítására és bemelegítésre terhelés előtt.</p>
+                </div>
+              </article>
+            </div>
+          </noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS =====
+         Valódi visszajelzések (kolléga-ajánlás + páciensek). Megjelenítés:
+         vezetéknév-kezdőbetű + teljes keresztnév + a vélemény — csillag/kor
+         nélkül. Új vélemény hozzáadásakor a components/testimonials.html
+         tükröt is frissíteni kell. -->
+    <section id="testimonials" data-component="testimonials">
+      <div class="section">
+        <div class="container-page">
+          <header class="max-w-2xl mb-12 md:mb-16 flex flex-col gap-5" data-stagger>
+            <span class="section-eyebrow eyebrow-dot" data-reveal>Vélemények</span>
+            <h2 class="section-title text-balance" data-reveal>
+              Akik már<br />
+              <span class="text-brand">jártak nálam.</span>
+            </h2>
+            <p class="section-lede text-pretty" data-reveal>
+              Szakmai ajánlások és páciensek visszajelzései.
+            </p>
+          </header>
+
+          <div class="testimonial-grid" data-stagger>
+            <figure class="testimonial-card" data-reveal>
+              <blockquote class="testimonial-quote">
+                Gyógymasszőrként szeretettel ajánlom Rékát mindenkinek! Kiváló szakember, precíz, nagy tudású, bátran ajánlom a vendégeimnek!
+              </blockquote>
+              <figcaption class="testimonial-author">
+                <span class="testimonial-name">Sz. Melinda</span>
+                <span class="testimonial-source">
+                  <svg viewBox="0 0 320 512" width="12" height="12" fill="currentColor" aria-hidden="true"><path d="M279.14 288l14.22-92.66h-88.91V127.91c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+                  Facebook-vélemény
+                </span>
+              </figcaption>
+            </figure>
+
+            <figure class="testimonial-card" data-reveal>
+              <blockquote class="testimonial-quote">
+                Réka munkája nagyon precíz, és úgy gondolom, hogy szakmailag nagyon ott van. Odafigyel, hogy mi jó nekünk és mi nem. Felhívja a figyelmet az interneten található helytelenül kivitelezett bemutató gyakorlatokra is. Köszönjük a munkádat, Réka!
+              </blockquote>
+              <figcaption class="testimonial-author">
+                <span class="testimonial-name">K. Ágota</span>
+                <span class="testimonial-source">
+                  <svg viewBox="0 0 320 512" width="12" height="12" fill="currentColor" aria-hidden="true"><path d="M279.14 288l14.22-92.66h-88.91V127.91c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+                  Facebook-vélemény
+                </span>
+              </figcaption>
+            </figure>
+
+            <figure class="testimonial-card" data-reveal>
+              <blockquote class="testimonial-quote">
+                Réka személyében egy nagyon kedves, agilis szakembert ismerhettem meg, aki nyitott az újdonságokra, és holisztikus szemlélettel tekint a mozgásszervi problémákra. Már egy kezelés is felér nála a csodával.
+              </blockquote>
+              <figcaption class="testimonial-author">
+                <span class="testimonial-name">Sz. Andrea</span>
+                <span class="testimonial-source">
+                  <svg viewBox="0 0 320 512" width="12" height="12" fill="currentColor" aria-hidden="true"><path d="M279.14 288l14.22-92.66h-88.91V127.91c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+                  Facebook-vélemény
+                </span>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="testimonial-more" data-reveal>
+            <a href="https://www.facebook.com/vargarekagyogytornasz/reviews" target="_blank" rel="noopener noreferrer" class="link-underline">
+              Az összes vélemény a Facebookon
+            </a>
+            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GALLERY ===== -->
+    <section id="gallery" data-component="gallery">
+      <div class="section">
+        <div class="container-page">
+          <header class="max-w-2xl mb-12 md:mb-16 flex flex-col gap-5" data-stagger>
+            <span class="section-eyebrow eyebrow-dot" data-reveal>Galéria</span>
+            <h2 class="section-title text-balance" data-reveal>A rendelő</h2>
+            <p class="section-lede text-pretty" data-reveal>
+              Csendes, letisztult tér — minden részlet a fókuszt szolgálja.
+            </p>
+          </header>
+
+          <div data-gallery>
+            <figure class="masonry-item shadow-soft" style="aspect-ratio: 3/2" data-reveal>
+              <picture>
+                <source srcset="assets/images/clinic-main.avif" type="image/avif" />
+                <source srcset="assets/images/clinic-main.webp" type="image/webp" />
+                <img src="assets/images/clinic-main.jpg"
+                     width="2048" height="1365"
+                     alt="A Physio &amp; More rendelő — átfogó tér: kezelőasztal, bordásfal, tükör"
+                     loading="lazy" decoding="async" />
+              </picture>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRICING ===== -->
+    <section id="pricing" data-component="pricing">
+      <div class="section">
+        <div class="container-page">
+          <header class="max-w-3xl mx-auto mb-12 md:mb-16 flex flex-col gap-5" data-stagger>
+            <span class="section-eyebrow eyebrow-dot" data-reveal>Árlista</span>
+            <h2 class="section-title text-balance" data-reveal>Az árak — átláthatóan.</h2>
+            <p class="section-lede text-pretty" data-reveal>
+              Az alábbi alkalmi díjak tájékoztató jellegűek. Bérletek és személyre szabott csomagok igény szerint.
+            </p>
+          </header>
+          <div class="max-w-3xl mx-auto" data-reveal>
+            <ul class="list-none p-0 m-0" data-pricing-list></ul>
+            <!-- No-JS fallback: teljes árlista JS nélkül is (a böngésző
+                 JS mellett figyelmen kívül hagyja). Az inline pricing-data
+                 JSON-nel szinkronban tartandó. -->
+            <noscript>
+              <ul class="list-none p-0 m-0">
+                <li class="price-row is-featured">
+                  <div>
+                    <div class="price-name">Egyéni mozgásterápia</div>
+                    <div class="price-meta">Felmérés és személyre szabott terv készítése</div>
+                  </div>
+                  <div class="price-amount">11 000<span class="unit">Ft / 55 perc</span></div>
+                </li>
+                <li class="price-row">
+                  <div>
+                    <div class="price-name">Triplex gerincterápia</div>
+                    <div class="price-meta">Egyéni 3D gerinckezelés</div>
+                  </div>
+                  <div class="price-amount">11 000<span class="unit">Ft / alkalom</span></div>
+                </li>
+                <li class="price-row">
+                  <div>
+                    <div class="price-name">Triplex tréning — egyéni</div>
+                    <div class="price-meta">Funkcionális egyéni foglalkozás, derékfájás kezelésére</div>
+                  </div>
+                  <div class="price-amount">8 000<span class="unit">Ft / alkalom</span></div>
+                </li>
+                <li class="price-row">
+                  <div>
+                    <div class="price-name">3D YOGA — csoportos</div>
+                    <div class="price-meta">Tudatos mozgás és tartáskorrekció</div>
+                  </div>
+                  <div class="price-amount">1 500<span class="unit">Ft / alkalom</span></div>
+                </li>
+                <li class="price-row">
+                  <div>
+                    <div class="price-name">Funkcionális köredzés</div>
+                    <div class="price-meta">Kiscsoportos erősítő tréning, eszközökkel</div>
+                  </div>
+                  <div class="price-amount">1 500<span class="unit">Ft / alkalom</span></div>
+                </li>
+                <li class="price-row">
+                  <div>
+                    <div class="price-name">Safe laser kezelés</div>
+                    <div class="price-meta">Pontos területre, fájdalomcsillapítás és regeneráció</div>
+                  </div>
+                  <div class="price-amount">4 000<span class="unit">Ft / alkalom</span></div>
+                </li>
+                <li class="price-row">
+                  <div>
+                    <div class="price-name">Kinesio tape felhelyezés</div>
+                    <div class="price-meta">Tape anyaggal együtt</div>
+                  </div>
+                  <div class="price-amount">2 500<span class="unit">Ft / alkalom</span></div>
+                </li>
+                <li class="price-row">
+                  <div>
+                    <div class="price-name">Vagus terápia</div>
+                    <div class="price-meta">Idegrendszeri regeneráció, stressz kezelés</div>
+                  </div>
+                  <div class="price-amount">5 500<span class="unit">Ft / 30 perc</span></div>
+                </li>
+                <li class="price-row">
+                  <div>
+                    <div class="price-name">Hegkezelés</div>
+                    <div class="price-meta">Manuális technikákkal és safe laserrel</div>
+                  </div>
+                  <div class="price-amount">5 500<span class="unit">Ft / 30 perc</span></div>
+                </li>
+                <li class="price-row">
+                  <div>
+                    <div class="price-name">Fascia és trigger pont kezelés, köpölyözés</div>
+                  </div>
+                  <div class="price-amount">11 000<span class="unit">Ft / 55 perc</span></div>
+                </li>
+                <li class="price-row">
+                  <div>
+                    <div class="price-name">Állkapocs ízületi, fülzúgás kezelés</div>
+                    <div class="price-meta">30 / 55 perc</div>
+                  </div>
+                  <div class="price-amount">6 500 / 11 000<span class="unit">Ft</span></div>
+                </li>
+                <li class="price-row">
+                  <div>
+                    <div class="price-name">Funkcionális Flossing</div>
+                    <div class="price-meta">Kompressziós terápia mozgásszervi panaszok esetén</div>
+                  </div>
+                  <div class="price-amount">5 500<span class="unit">Ft / 30 perc</span></div>
+                </li>
+              </ul>
+            </noscript>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" data-component="contact">
+      <div class="section">
+        <div class="container-page">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+
+            <!-- Bal: heading + elérhetőség-lista + közösségi média -->
+            <div class="lg:col-span-5 flex flex-col gap-8" data-stagger>
+              <div class="flex flex-col gap-5">
+                <span class="section-eyebrow eyebrow-dot" data-reveal>Kapcsolat</span>
+                <h2 class="section-title text-balance" data-reveal>Az első lépés<br /><span class="text-brand">egy beszélgetés.</span></h2>
+                <p class="section-lede text-pretty" data-reveal>
+                  Írja le pár sorban, mi a panasz — vagy hívjon telefonon. Az első alkalom felmérés, nem elkötelezettség.
+                </p>
+              </div>
+
+              <div class="info-list" data-reveal>
+                <a href="tel:+36306433449" class="info-row" data-reveal>
+                  <span class="info-icon"><i data-lucide="phone" class="w-5 h-5"></i></span>
+                  <div>
+                    <div class="info-label">Telefon</div>
+                    <div class="info-value">+36 30 643 3449</div>
+                  </div>
+                  <i data-lucide="arrow-up-right" class="info-go w-4 h-4" aria-hidden="true"></i>
+                </a>
+                <a href="mailto:vreka93@gmail.com" class="info-row" data-reveal>
+                  <span class="info-icon"><i data-lucide="mail" class="w-5 h-5"></i></span>
+                  <div>
+                    <div class="info-label">E-mail</div>
+                    <div class="info-value">vreka93@gmail.com</div>
+                  </div>
+                  <i data-lucide="arrow-up-right" class="info-go w-4 h-4" aria-hidden="true"></i>
+                </a>
+                <a href="https://maps.google.com/?q=Tiszafüred,+Fő+út+28."
+                   target="_blank" rel="noopener noreferrer"
+                   class="info-row" data-reveal>
+                  <span class="info-icon"><i data-lucide="map-pin" class="w-5 h-5"></i></span>
+                  <div>
+                    <div class="info-label">Cím</div>
+                    <div class="info-value">Tiszafüred, Fő út 28.</div>
+                  </div>
+                  <i data-lucide="arrow-up-right" class="info-go w-4 h-4" aria-hidden="true"></i>
+                </a>
+                <div class="info-row" data-reveal>
+                  <span class="info-icon"><i data-lucide="clock" class="w-5 h-5"></i></span>
+                  <div>
+                    <div class="info-label">Nyitvatartás</div>
+                    <div class="hours">
+                      <div class="hours-row"><span>Hétfő – Csütörtök</span><span class="hours-time">10:00 – 18:00</span></div>
+                      <div class="hours-row hours-closed"><span>Péntek – Vasárnap</span><span class="hours-time">Zárva</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div data-reveal>
+                <div class="info-label">Közösségi média</div>
+                <div class="social-row">
+                  <a href="https://www.facebook.com/vargarekagyogytornasz" target="_blank" rel="noopener noreferrer"
+                     class="social-btn" aria-label="Physio & More a Facebookon">
+                    <svg viewBox="0 0 320 512" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M279.14 288l14.22-92.66h-88.91V127.91c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Jobb: térkép (click-to-load: a nehéz Google iframe csak a látogató
+                 kattintására töltődik be — teljesítmény + GDPR). Desktopon a bal
+                 oszlop magasságára nyúlik. Valódi Google Cégem linkre cserélendő. -->
+            <div class="lg:col-span-7" data-reveal>
+              <div class="map-wrap map-wrap--fill">
+                <button type="button" class="map-loader" data-map-load
+                        data-src="https://www.google.com/maps?q=Tiszaf%C3%BCred%2C%20F%C5%91%20%C3%BAt%2028.&output=embed"
+                        data-title="Physio & More — Tiszafüred, Fő út 28.">
+                  <span class="map-loader-inner">
+                    <span class="map-loader-pin"><i data-lucide="map-pin" class="w-6 h-6"></i></span>
+                    <span class="map-loader-title">Térkép megtekintése</span>
+                    <span class="map-loader-sub">Tiszafüred, Fő út 28. — a Google Térkép betöltése sütiket használhat</span>
+                  </span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer-mount" data-component="footer">
+    <div class="site-footer">
+      <div class="container-page">
+        <div class="footer-grid">
+
+          <!-- Brand + rövid leírás -->
+          <div class="footer-col footer-col-brand">
+            <span class="footer-name">Physio<span class="text-brand"> &amp;</span> More</span>
+            <p class="footer-tagline">
+              Gyógytorna rendelő Tiszafüreden. Mozgásszervi panaszok prevenciója és rehabilitációja — egyéni programmal.
+            </p>
+            <div class="footer-person">Bertalan-Varga Réka <span>· Gyógytornász</span></div>
+            <a href="https://www.facebook.com/vargarekagyogytornasz" target="_blank" rel="noopener noreferrer"
+               class="social-btn" aria-label="Physio & More a Facebookon">
+              <svg viewBox="0 0 320 512" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M279.14 288l14.22-92.66h-88.91V127.91c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+            </a>
+          </div>
+
+          <!-- Elérhetőség -->
+          <div class="footer-col">
+            <div class="footer-col-title">Elérhetőség</div>
+            <a href="tel:+36306433449" class="footer-link">+36 30 643 3449</a>
+            <a href="mailto:vreka93@gmail.com" class="footer-link">vreka93@gmail.com</a>
+            <a href="https://maps.google.com/?q=Tiszafüred,+Fő+út+28." target="_blank" rel="noopener noreferrer" class="footer-link">Tiszafüred, Fő út 28.</a>
+          </div>
+
+          <!-- Nyitvatartás -->
+          <div class="footer-col">
+            <div class="footer-col-title">Nyitvatartás</div>
+            <div class="footer-hours-row"><span>Hétfő – Csütörtök</span><span>10:00 – 18:00</span></div>
+            <div class="footer-hours-row footer-closed"><span>Péntek – Vasárnap</span><span>Zárva</span></div>
+          </div>
+
+          <!-- Oldaltérkép -->
+          <nav class="footer-col" aria-label="Lábléc navigáció">
+            <div class="footer-col-title">Oldal</div>
+            <a href="#about" class="footer-link">Rólam</a>
+            <a href="#services" class="footer-link">Szolgáltatások</a>
+            <a href="#gallery" class="footer-link">Galéria</a>
+            <a href="#testimonials" class="footer-link">Vélemények</a>
+            <a href="#pricing" class="footer-link">Árlista</a>
+            <a href="#contact" class="footer-link">Kapcsolat</a>
+          </nav>
+
+        </div>
+
+        <hr class="footer-divider" />
+
+        <div class="footer-meta">
+          <span>© <span data-year>2026</span> Physio &amp; More · Tiszafüred</span>
+          <div class="footer-links">
+            <a href="adatkezeles.html" class="link-underline">Adatkezelési tájékoztató</a>
+            <a href="#hero" class="link-underline">Vissza a tetejére</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky mobile CTA -->
+  <a href="#contact" class="mobile-cta lg:hidden" aria-label="Időpontfoglalás telefonon">
+    <span>Időpontfoglalás</span>
+    <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+  </a>
+
+  <!-- ============================================================
+       Inline data — file:// alatt is működik (nincs fetch).
+       Forrás: data/services.json és data/pricing.json (single
+       source of truth a /data/ mappában; itt build-szerűen inline).
+       ============================================================ -->
+  <!-- A sorrend a bento-rácsot szolgálja (6 oszlop): featured = 4, normál = 2.
+       Sorok: 4+2 / 2+2+2 / 2+4 / 2+2+2 — átrendezésnél erre figyeljetek. -->
+  <script type="application/json" id="services-data">
+  [
+    {"id":"triplex-gerinc","title":"Triplex gerincterápia","icon":"spline","featured":true,"description":"Háromdimenziós gerinckezelés a tartás, stabilitás és fájdalommentes mozgástartomány helyreállítására."},
+    {"id":"egyeni","title":"Egyéni mozgásterápia","icon":"activity","description":"Személyre szabott terápia részletes felmérés alapján — pontos célokkal és mérhető előrehaladással."},
+    {"id":"triplex-trening","title":"Triplex tréning","icon":"dumbbell","description":"Funkcionális csoportos foglalkozás, mely a mély izomzat erősítését és tartáskorrekciót célozza."},
+    {"id":"rehab","title":"Sérülések utáni rehabilitáció","icon":"heart-pulse","description":"Sport- és balesetes sérülések utáni komplex rehabilitációs program — visszatérés a mozgáshoz."},
+    {"id":"szules-utan","title":"Szülés utáni regeneráló tréning","icon":"baby","description":"A medencefenék és a haskorzettek tudatos újraépítése biztonságos, lépcsőzetes terheléssel."},
+    {"id":"safe-laser","title":"Safe laser","icon":"zap","description":"Lágylézeres kezelés gyulladáscsökkentésre, regenerációra és fájdalomcsillapításra."},
+    {"id":"porckorong","title":"Porckorongsérv komplex rehabilitációja","icon":"shield-check","featured":true,"description":"Cél a fájdalom csökkentése, a stabilitás visszaépítése és a kiváltó tényezők korrigálása."},
+    {"id":"kinesio","title":"Kinesio tape","icon":"tag","description":"Speciális tape-technika az izmok és ízületek támogatására, a természetes mozgás megőrzése mellett."},
+    {"id":"vagus","title":"Vagus terápia","icon":"waves","description":"Idegrendszeri egyensúly visszaállítása — stresszcsökkentés és vegetatív regeneráció támogatása."},
+    {"id":"allkapocs","title":"Állkapocs ízületi kezelés","icon":"scan-face","description":"TMD jellegű panaszok kezelése manuális technikákkal és célzott gyakorlatokkal."},
+    {"id":"kopoly","title":"Köpölyterápia","icon":"wind","description":"Vákuumos szívóhatás a szöveti keringés serkentésére, izomlazításra és a komplex rehabilitáció kiegészítésére."},
+    {"id":"flossing","title":"Funkcionális flossing","icon":"move-horizontal","description":"Kompressziós szalagos technika az ízületi mozgástartomány gyors javítására és bemelegítésre terhelés előtt."}
+  ]
+  </script>
+
+  <script type="application/json" id="pricing-data">
+  [
+    {"id":"egyeni-elso","name":"Egyéni mozgásterápia","meta":"Felmérés és személyre szabott terv készítése","price":"11 000","unit":"Ft / 55 perc","featured":true},
+    {"id":"triplex-gerinc","name":"Triplex gerincterápia","meta":"Egyéni 3D gerinckezelés","price":"11 000","unit":"Ft / alkalom"},
+    {"id":"triplex-egyeni","name":"Triplex tréning — egyéni","meta":"Funkcionális egyéni foglalkozás, derékfájás kezelésére","price":"8 000","unit":"Ft / alkalom"},
+    {"id":"yoga","name":"3D YOGA — csoportos","meta":"Tudatos mozgás és tartáskorrekció","price":"1 500","unit":"Ft / alkalom"},
+    {"id":"koredzes","name":"Funkcionális köredzés","meta":"Kiscsoportos erősítő tréning, eszközökkel","price":"1 500","unit":"Ft / alkalom"},
+    {"id":"safe-laser","name":"Safe laser kezelés","meta":"Pontos területre, fájdalomcsillapítás és regeneráció","price":"4 000","unit":"Ft / alkalom"},
+    {"id":"kinesio","name":"Kinesio tape felhelyezés","meta":"Tape anyaggal együtt","price":"2 500","unit":"Ft / alkalom"},
+    {"id":"vagus","name":"Vagus terápia","meta":"Idegrendszeri regeneráció, stressz kezelés","price":"5 500","unit":"Ft / 30 perc"},
+    {"id":"heg","name":"Hegkezelés","meta":"Manuális technikákkal és safe laserrel","price":"5 500","unit":"Ft / 30 perc"},
+    {"id":"fascia","name":"Fascia és trigger pont kezelés, köpölyözés","price":"11 000","unit":"Ft / 55 perc"},
+    {"id":"allkapocs","name":"Állkapocs ízületi, fülzúgás kezelés","priceLines":[{"price":"6 500","unit":"Ft / 30 perc"},{"price":"11 000","unit":"Ft / 55 perc"}]},
+    {"id":"flossing","name":"Funkcionális Flossing","meta":"Kompressziós terápia mozgásszervi panaszok esetén","price":"5 500","unit":"Ft / 30 perc"}
+  ]
+  </script>
+
+  <!-- Scripts (sorrend számít: components → többi behavior) -->
+  <script src="scripts/components.js" defer></script>
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/animations.js" defer></script>
+  <script src="scripts/gallery.js" defer></script>
+  <script src="scripts/contact.js" defer></script>
+  <script src="scripts/illustrations.js" defer></script>
+  <script src="scripts/main.js" defer></script>
+</body>
+</html>

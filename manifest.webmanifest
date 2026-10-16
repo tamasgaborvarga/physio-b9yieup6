@@ -1,0 +1,25 @@
+{
+  "name": "Physio & More — Gyógytorna rendelő",
+  "short_name": "Physio & More",
+  "description": "Mozgásszervi panaszok prevenciója és rehabilitációja Tiszafüreden — Bertalan-Varga Réka.",
+  "lang": "hu",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#0F766E",
+  "icons": [
+    {
+      "src": "assets/icons/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
