@@ -668,20 +668,20 @@
   background: linear-gradient(150deg, rgba(255,255,255,0.92) 0%, var(--color-brand-soft) 100%);
 }
 
-/* Editorial sorszám a kártya sarkában — halvány serif kurzíva */
+/* Sorszám a cím fölött (2026-10-16: a sarokból ide került, mert a rajzokra ráfeküdt) */
 .service-num {
-  position: absolute;
-  top: var(--space-4);
-  right: var(--space-5);
-  z-index: 1;
-  font-family: var(--font-display);
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: -0.03em;
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  font-variant-numeric: tabular-nums;
   line-height: 1;
-  color: rgba(11,90,83,0.20);
-  pointer-events: none;
+  color: var(--color-brand);
+  margin-bottom: calc(var(--space-2) * -1);
 }
+/* no-JS lista: a sorszám a kártyán közvetlenül ül (nincs rajz/body) */
+.service-card > .service-num { padding: var(--space-6) var(--space-6) 0; margin-bottom: 0; }
 
 /* ----------- Service illusztráció (a kártya tetején, teljes szélességben) -----------
    Saját vonalrajz-lapok (styles/illustrations.css + scripts/illustrations.js);
@@ -695,7 +695,6 @@
   --il-paper: #F5F2EC;
 }
 .service-art .il { display: block; width: 100%; height: 100%; }
-.service-art .il-mk-tr { display: none; }   /* a sorszám helye */
 .service-card.is-featured .service-art { background: #EEF3EE; --il-paper: #EEF3EE; }
 
 .service-body {
@@ -1119,6 +1118,32 @@ a.info-row:focus-visible .info-value { color: var(--color-brand); }
     height: 100%;
   }
 }
+
+/* ----------- Térképkártya: cím + útvonal + click-to-load ----------- */
+.map-card {
+  position: relative;
+  display: grid;
+  place-items: center;
+  background: var(--color-bg-tint);
+  aspect-ratio: auto;          /* a tartalom szabja a magasságot, ne vágódjon */
+  min-height: 340px;
+}
+.map-card-art { position: absolute; inset: 0; width: 100%; height: 100%; }
+.map-card-art path, .map-card-art circle { fill: none; vector-effect: non-scaling-stroke; }
+.map-grid path { stroke: var(--color-ink); stroke-width: 1; opacity: .07; }
+.map-rings circle { stroke: var(--color-brand); stroke-width: 1; opacity: .22; stroke-dasharray: 4 5; }
+.map-tick { stroke: var(--color-brand); stroke-width: 1; opacity: .45; }
+.map-card-body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  text-align: center;
+  padding: var(--space-8) var(--space-6);
+}
+.map-card-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-3); margin-top: var(--space-4); }
+.map-card-note { font-size: 0.75rem; color: var(--color-muted); margin-top: var(--space-2); }
 
 /* ----------- Map click-to-load (a nehéz iframe csak kattintásra) ----------- */
 .map-loader {

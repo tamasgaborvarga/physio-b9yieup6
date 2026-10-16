@@ -29,7 +29,7 @@
 .il-bandl { fill: none; stroke: var(--il-accent); stroke-width: 1.1; }
 .il-t {
   font-family: var(--font-sans, system-ui, sans-serif);
-  font-size: 10px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
+  font-size: 13px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
   fill: var(--il-ink); opacity: .55;
 }
 .il-ta { fill: var(--il-accent); opacity: 1; }

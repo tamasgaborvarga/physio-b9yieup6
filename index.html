@@ -181,7 +181,6 @@
         <div class="nav-links">
           <a class="nav-link" href="#about">Rólam</a>
           <a class="nav-link" href="#services">Szolgáltatások</a>
-          <a class="nav-link" href="#gallery">Galéria</a>
           <a class="nav-link" href="#testimonials">Vélemények</a>
           <a class="nav-link" href="#pricing">Árlista</a>
           <a class="nav-link" href="#contact">Kapcsolat</a>
@@ -206,7 +205,6 @@
     <div id="mobile-panel" class="mobile-panel" aria-hidden="true">
       <a href="#about">Rólam</a>
       <a href="#services">Szolgáltatások</a>
-      <a href="#gallery">Galéria</a>
       <a href="#testimonials">Vélemények</a>
       <a href="#pricing">Árlista</a>
       <a href="#contact">Kapcsolat</a>
@@ -259,7 +257,7 @@
             <div class="hero-stats grid grid-cols-3 gap-6 w-full max-w-md pt-6 hairline" data-reveal>
               <div class="hero-stat"><span class="num">10+</span><span class="lbl">év tapasztalat</span></div>
               <div class="hero-stat"><span class="num">1:1</span><span class="lbl">személyes figyelem</span></div>
-              <div class="hero-stat"><span class="num">100%</span><span class="lbl">egyéni program</span></div>
+              <div class="hero-stat"><span class="num">12</span><span class="lbl">kezelési terület</span></div>
             </div>
           </div>
         </div>
@@ -539,33 +537,8 @@
       </div>
     </section>
 
-    <!-- ===== GALLERY ===== -->
-    <section id="gallery" data-component="gallery">
-      <div class="section">
-        <div class="container-page">
-          <header class="max-w-2xl mb-12 md:mb-16 flex flex-col gap-5" data-stagger>
-            <span class="section-eyebrow eyebrow-dot" data-reveal>Galéria</span>
-            <h2 class="section-title text-balance" data-reveal>A rendelő</h2>
-            <p class="section-lede text-pretty" data-reveal>
-              Csendes, letisztult tér — minden részlet a fókuszt szolgálja.
-            </p>
-          </header>
-
-          <div data-gallery>
-            <figure class="masonry-item shadow-soft" style="aspect-ratio: 3/2" data-reveal>
-              <picture>
-                <source srcset="assets/images/clinic-main.avif" type="image/avif" />
-                <source srcset="assets/images/clinic-main.webp" type="image/webp" />
-                <img src="assets/images/clinic-main.jpg"
-                     width="2048" height="1365"
-                     alt="A Physio &amp; More rendelő — átfogó tér: kezelőasztal, bordásfal, tükör"
-                     loading="lazy" decoding="async" />
-              </picture>
-            </figure>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- ===== GALLERY — 2026-10-16: kivéve, amíg csak egy fotó van (ugyanaz,
+         mint a nyitókép). Valódi rendelő-fotókkal visszatehető: components/gallery.html. -->
 
     <!-- ===== PRICING ===== -->
     <section id="pricing" data-component="pricing">
@@ -745,16 +718,33 @@
                  kattintására töltődik be — teljesítmény + GDPR). Desktopon a bal
                  oszlop magasságára nyúlik. Valódi Google Cégem linkre cserélendő. -->
             <div class="lg:col-span-7" data-reveal>
-              <div class="map-wrap map-wrap--fill">
-                <button type="button" class="map-loader" data-map-load
-                        data-src="https://www.google.com/maps?q=Tiszaf%C3%BCred%2C%20F%C5%91%20%C3%BAt%2028.&output=embed"
-                        data-title="Physio & More — Tiszafüred, Fő út 28.">
-                  <span class="map-loader-inner">
-                    <span class="map-loader-pin"><i data-lucide="map-pin" class="w-6 h-6"></i></span>
-                    <span class="map-loader-title">Térkép megtekintése</span>
-                    <span class="map-loader-sub">Tiszafüred, Fő út 28. — a Google Térkép betöltése sütiket használhat</span>
-                  </span>
-                </button>
+              <div class="map-wrap map-wrap--fill map-card">
+                <svg class="map-card-art" viewBox="0 0 640 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+                  <g class="map-grid">
+                    <path d="M0 80H640M0 160H640M0 240H640M0 320H640M80 0V400M160 0V400M240 0V400M320 0V400M400 0V400M480 0V400M560 0V400"/>
+                  </g>
+                  <g class="map-rings">
+                    <circle cx="320" cy="170" r="54"/><circle cx="320" cy="170" r="104"/><circle cx="320" cy="170" r="164"/>
+                  </g>
+                  <path class="map-tick" d="M302 170H338M320 152V188"/>
+                </svg>
+                <div class="map-card-body">
+                  <span class="map-loader-pin"><i data-lucide="map-pin" class="w-6 h-6"></i></span>
+                  <span class="map-loader-title">Tiszafüred, Fő út 28.</span>
+                  <span class="map-loader-sub">5350 Tiszafüred · Hétfő – Csütörtök 10:00 – 18:00</span>
+                  <div class="map-card-actions">
+                    <a class="btn btn-brand" href="https://www.google.com/maps/dir/?api=1&amp;destination=Tiszaf%C3%BCred%2C%20F%C5%91%20%C3%BAt%2028." target="_blank" rel="noopener noreferrer">
+                      Útvonaltervezés
+                      <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                    </a>
+                    <button type="button" class="btn btn-ghost" data-map-load
+                            data-src="https://www.google.com/maps?q=Tiszaf%C3%BCred%2C%20F%C5%91%20%C3%BAt%2028.&amp;output=embed"
+                            data-title="Physio &amp; More — Tiszafüred, Fő út 28.">
+                      Térkép betöltése
+                    </button>
+                  </div>
+                  <span class="map-card-note">A Google Térkép betöltése sütiket használhat.</span>
+                </div>
               </div>
             </div>
 
@@ -805,7 +795,6 @@
             <div class="footer-col-title">Oldal</div>
             <a href="#about" class="footer-link">Rólam</a>
             <a href="#services" class="footer-link">Szolgáltatások</a>
-            <a href="#gallery" class="footer-link">Galéria</a>
             <a href="#testimonials" class="footer-link">Vélemények</a>
             <a href="#pricing" class="footer-link">Árlista</a>
             <a href="#contact" class="footer-link">Kapcsolat</a>
@@ -827,9 +816,9 @@
   </footer>
 
   <!-- Sticky mobile CTA -->
-  <a href="#contact" class="mobile-cta lg:hidden" aria-label="Időpontfoglalás telefonon">
-    <span>Időpontfoglalás</span>
-    <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+  <a href="tel:+36306433449" class="mobile-cta lg:hidden" aria-label="Időpontfoglalás telefonon: +36 30 643 3449">
+    <i data-lucide="phone" class="w-4 h-4"></i>
+    <span>Hívás · időpont</span>
   </a>
 
   <!-- ============================================================

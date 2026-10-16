@@ -33,9 +33,9 @@
     if (!grid || !Array.isArray(items)) return;
     grid.innerHTML = items.map((s, i) => `
       <article class="service-card${s.featured ? ' is-featured' : ''}" data-reveal data-reveal-stagger style="--index:${i}; --stagger:60ms">
-        <span class="service-num" aria-hidden="true">${String(i + 1).padStart(2, '0')}</span>
         ${serviceArt(s.id)}
         <div class="service-body">
+          <span class="service-num" aria-hidden="true">${String(i + 1).padStart(2, '0')}</span>
           <h3 class="service-title">${s.title}</h3>
           <p class="service-desc">${s.description}</p>
         </div>
